@@ -88,8 +88,10 @@
     // Jika Anda membuat database sendiri di supabase.com, tempel URL & ANON KEY di sini.
     // Jika dibiarkan kosong (""), web otomatis memakai database default resmi.
     // =========================================================================
-    window.LOCKEXAM_SUPABASE_URL = ""; // Contoh: "https://abcdefghijkl.supabase.co"
-    window.LOCKEXAM_SUPABASE_KEY = ""; // Contoh: "eyJhbGciOi..."
+    window.EXAMBRO_SUPABASE_URL = ""; // Contoh: "https://abcdefghijkl.supabase.co"
+    window.EXAMBRO_SUPABASE_KEY = ""; // Contoh: "eyJhbGciOi..."
+    window.LOCKEXAM_SUPABASE_URL = window.EXAMBRO_SUPABASE_URL;
+    window.LOCKEXAM_SUPABASE_KEY = window.EXAMBRO_SUPABASE_KEY;
 
     // Penanganan error global untuk mencegah layar putih bisu (silent white screen)
     window.addEventListener('error', function(e) {
